@@ -8,11 +8,18 @@
 
 import UIKit
 
+struct Question {
+    var Question : String!
+    var Answers : [String]!
+    var Answer : Int!
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet var Buttons: [UIButton]!
-    
     @IBOutlet weak var questionLabel: UILabel!
+    
+    var Questions = [Question]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
