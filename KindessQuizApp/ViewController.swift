@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 struct Question {
     var Question : String!
     var Answers : [String]!
@@ -24,6 +23,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Questions = [Question(Question: "Hi! My name is Yusafi! What's your name?", Answers: ["Nice to meet you! My name is \"your name\".","It's \"your name\". Where are you from?","My name is \"your name\", I kinda like your accent.","Im \"your name\"."], Answer: 1)]
     }
 
     override func didReceiveMemoryWarning() {
